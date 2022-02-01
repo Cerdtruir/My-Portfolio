@@ -36,7 +36,8 @@ nav {
   justify-content: center;
   margin: 24px;
   height: 600px;
-  background: url("images/Ellipse2.svg") 5% 70% no-repeat,
+  background: 
+    url("images/Ellipse2.svg") 5% 70% no-repeat,
     url("images/Ellipse11.svg") 10% 60% no-repeat,
     url("images/Ellipse14.svg") 15% 30% no-repeat,
     url("images/Ellipse8.svg") 25% 40% no-repeat,
