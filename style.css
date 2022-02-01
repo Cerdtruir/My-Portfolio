@@ -38,9 +38,21 @@ nav {
   margin: 24px;
   height: 600px;
 }
+
 ul {
   margin: 0;
   padding: 0;
   display: flex;
   list-style-type: none;
+  align-items: center;
+}
+
+li {
+  margin: 2px 10px 2px 0;
+}
+
+.social-image {
+  width: 25px;
+  height: 25px;
+  text-align: center;
 }
