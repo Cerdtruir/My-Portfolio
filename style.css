@@ -1,12 +1,12 @@
 body {
   background-color: #E5E5E5;
   margin: 0;
+  font-family: Poppins, sans-serif;
 }
 
 header {
   display: flex;
   flex-direction: column;
-  font-family: Poppins, sans-serif;
   background-color: #fff;
   border-radius: 0px 0px 0px 100px;
   margin-bottom: 100px;
