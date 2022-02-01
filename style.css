@@ -94,6 +94,22 @@ li {
   text-align: center;
 }
 
+.portfolio-grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.portfolio-flex {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  margin: 0 24px;
+}
+
+.portfolio-flex > * {
+  margin: 16px;
+}
+
 button:hover {
   background-color: #6070ff;
 }
