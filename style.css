@@ -37,6 +37,7 @@ nav {
   justify-content: center;
   margin: 24px;
   height: 600px;
+  background-color: #ffffff;
   background: url("images/Ellipse\ 12.svg") 5% 70% no-repeat,
     url("images/Ellipse\ 11.svg") 10% 60% no-repeat,
     url("images/Ellipse\ 14.svg") 15% 30% no-repeat,
@@ -59,6 +60,7 @@ nav {
 }
 
 .hero-text {
+  background-color: #ffffff;
   font-size: 16px;
 }
 
