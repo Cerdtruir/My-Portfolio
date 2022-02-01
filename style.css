@@ -10,6 +10,10 @@ header {
 }
 
 h1 {
+  font-family: Poppins;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
   margin: 10px 0 10px 12px;
   color: #6070ff;
 }
