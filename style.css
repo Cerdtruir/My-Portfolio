@@ -10,7 +10,7 @@ header {
   justify-content: space-between;
 }
 
-h1 {
+.logo {
   font-family: Poppins;
   font-weight: 700;
   line-height: 20px;
