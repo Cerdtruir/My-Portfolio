@@ -2,7 +2,6 @@ header {
   display: flex;
   flex-direction: column;
   font-family: Poppins;
-  background-color: #ffffff;
 }
 
 .top-bar {
@@ -37,7 +36,6 @@ nav {
   justify-content: center;
   margin: 24px;
   height: 600px;
-  background-color: #ffffff;
   background: url("images/Ellipse\ 12.svg") 5% 70% no-repeat,
     url("images/Ellipse\ 11.svg") 10% 60% no-repeat,
     url("images/Ellipse\ 14.svg") 15% 30% no-repeat,
@@ -60,7 +58,7 @@ nav {
 }
 
 .hero-text {
-  background-color: #ffffff;
+  background-color: #fff;
   font-size: 16px;
 }
 
@@ -91,13 +89,16 @@ li {
 button:hover {
   background-color: #6070ff;
 }
+
 button:visited {
   background-color: #2230d2;
 }
+
 button:disabled {
   color: #5e6c84;
   background-color: white;
 }
+
 button:link {
   color: #6070ff;
   background-color: white;
