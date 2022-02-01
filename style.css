@@ -11,7 +11,6 @@ header {
 }
 
 .logo {
-  font-family: Poppins;
   font-weight: 700;
   line-height: 20px;
   text-align: center;
@@ -37,6 +36,15 @@ nav {
   justify-content: center;
   margin: 24px;
   height: 600px;
+}
+
+.hero-heading {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.hero-text {
+  font-size: 16px;
 }
 
 .connect-text {
