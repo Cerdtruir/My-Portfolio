@@ -2,6 +2,7 @@ header {
   display: flex;
   flex-direction: column;
   font-family: Poppins;
+  background-color: #ffffff;
 }
 
 .top-bar {
@@ -36,6 +37,20 @@ nav {
   justify-content: center;
   margin: 24px;
   height: 600px;
+  background: url("images/Ellipse\ 12.svg") 5% 70% no-repeat,
+    url("images/Ellipse\ 11.svg") 10% 60% no-repeat,
+    url("images/Ellipse\ 14.svg") 15% 30% no-repeat,
+    url("images/Ellipse\ 8.svg") 25% 40% no-repeat,
+    url("images/Ellipse\ 7.svg") 35% 95% no-repeat,
+    url("images/Ellipse\ 6.svg") 45% 85% no-repeat,
+    url("images/Ellipse\ 5.svg") 55% 75% no-repeat,
+    url("images/Ellipse\ 4.svg") 65% 65% no-repeat,
+    url("images/Rectangle\ 6.svg") 75% 55% no-repeat,
+    url("images/Rectangle\ 7.svg") 85% 45% no-repeat,
+    url("images/Rectangle\ 5.svg") 95% 35% no-repeat,
+    url("images/Rectangle\ 4.svg") 40% 5% no-repeat,
+    url("images/Ellipse\ 13.svg") 70% 25% no-repeat,
+    url("images/Ellipse\ 3.svg") 2% 1% no-repeat;
 }
 
 .hero-heading {
