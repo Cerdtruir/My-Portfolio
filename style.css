@@ -9,6 +9,7 @@ header {
   font-family: Poppins, sans-serif;
   background-color: #fff;
   border-radius: 0px 0px 0px 100px;
+  margin-bottom: 100px;
 }
 
 .top-bar {
@@ -151,12 +152,12 @@ li {
 button {
   border-color: #396DF2;
   color: #396DF2;
-  width: 100px;
-  height: 24px;
   padding: 12px;
   font-weight: 500;
   font-size: 17px;
-  line-height: 24px;
+  width: 130px;
+  height: 50px;
+  border-radius: 16px;
 }
 
 button:hover {
