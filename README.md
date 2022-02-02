@@ -1,6 +1,6 @@
 # My-Portfolio
 
-A website to display my portfolio of projects and websites
+A website to display my portfolio of projects and websites. This site was made with a figma template.
 
 ## Built With
 
