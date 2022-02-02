@@ -1,5 +1,5 @@
 body {
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
   margin: 0;
   font-family: Poppins, sans-serif;
 }
@@ -64,8 +64,8 @@ nav {
 .hero-heading {
   font-weight: 700;
   font-size: 40px;
-  color: #172B4D;
-  }
+  color: #172b4d;
+}
 
 .hero-text {
   background-color: #fff;
@@ -115,7 +115,7 @@ li {
 .portfolio-heading {
   font-size: 32px;
   font-weight: 700;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .portfolio-list-first {
@@ -127,12 +127,12 @@ li {
 .portfolio-list-dot {
   height: 8px;
   width: 8px;
-  background-color: #C1C7D0;
+  background-color: #c1c7d0;
   border-radius: 50%;
 }
 
 .portfolio-list-secondary {
-  color: #7A869A;
+  color: #7a869a;
   font-size: 13px;
 }
 
@@ -143,15 +143,15 @@ li {
 
 .language-text {
   border-radius: 8px;
-  background-color: #EBEBFF;
+  background-color: #ebebff;
   padding: 4px 12px;
-  color: #6070FF;
+  color: #6070ff;
 }
 
 button {
   background-color: #fff;
-  border-color: #396DF2;
-  color: #396DF2;
+  border-color: #396df2;
+  color: #396df2;
   padding: 12px;
   font-weight: 500;
   font-size: 17px;
@@ -192,7 +192,7 @@ button:link {
 
 .about-heading {
   margin-top: 114px;
-  color: #172B4D;
+  color: #172b4d;
   font-weight: bold;
   font-size: 40px;
 }
@@ -228,7 +228,7 @@ button:link {
 }
 
 .languages-list-item {
-  background-color: #F7F7F9;
+  background-color: #f7f7f9;
   width: 303px;
   height: 66.72px;
   display: flex;
@@ -252,7 +252,7 @@ button:link {
 .skills-line {
   width: 303px;
   height: 1px;
-  background-color: #DFE1E6;
+  background-color: #dfe1e6;
 }
 
 .skills-list-arrow-right {
