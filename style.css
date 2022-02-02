@@ -163,10 +163,12 @@ button {
 
 button:hover {
   background-color: #6070ff;
+  color: #fff;
 }
 
 button:visited {
   background-color: #2230d2;
+  color: #fff;
 }
 
 button:disabled {
