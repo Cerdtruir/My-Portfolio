@@ -8,7 +8,7 @@ header {
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  border-radius: 0px 0px 0px 100px;
+  border-radius: 0 0 0 100px;
   margin-bottom: 100px;
 }
 
@@ -185,9 +185,10 @@ button:link {
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  margin: 88px 0px;
+  margin: 88px 0;
   border-radius: 0 70px 0 0;
 }
+
 .about > * {
   margin: 10px 24px;
 }
@@ -223,7 +224,6 @@ button:link {
 
 .skills-list-item {
   width: 303px;
-  margin: 12px;
   font-weight: 500;
   font-size: 20px;
   margin: 24px 0;
