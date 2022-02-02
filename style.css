@@ -208,6 +208,7 @@ button:link {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin: 24px 36px;
 }
 
 .languages-list {
@@ -219,6 +220,9 @@ button:link {
 .skills-list-item {
   width: 303px;
   margin: 12px;
+  font-weight: 500;
+  font-size: 20px;
+  margin: 24px 0;
 }
 
 .languages-list-item {
@@ -238,4 +242,21 @@ button:link {
 
 .languages-list-item-text {
   text-align: center;
+}
+
+.skills-line {
+  width: 303px;
+  height: 1px;
+  background-color: #DFE1E6;
+}
+
+.skills-list-arrow-right {
+  float: right;
+  margin-right: 40px;
+}
+
+.skills-list-arrow-down {
+  float: right;
+  margin-right: 40px;
+  transform: rotate(90deg);
 }
