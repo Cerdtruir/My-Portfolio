@@ -20,7 +20,6 @@ header {
 
 .logo {
   font-weight: 700;
-  line-height: 20px;
   text-align: center;
   margin: 10px 0 10px 12px;
   color: #6070ff;
@@ -70,13 +69,11 @@ nav {
 
 .hero-text {
   background-color: #fff;
-  font-size: 16px;
   color: #344563;
 }
 
 .connect-text {
   font-weight: 500;
-  font-size: 16px;
   color: #7f8cff;
 }
 
@@ -142,8 +139,6 @@ li {
 .portfolio-text {
   color: #344563;
   font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
 }
 
 .language-text {
@@ -198,4 +193,8 @@ button:link {
   color: #172B4D;
   font-weight: bold;
   font-size: 40px;
+}
+
+.about-text {
+  color: #344563;
 }
