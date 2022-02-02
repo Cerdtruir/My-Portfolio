@@ -192,3 +192,10 @@ button:link {
 .about > * {
   margin: 10px 24px;
 }
+
+.about-heading {
+  margin-top: 114px;
+  color: #172B4D;
+  font-weight: bold;
+  font-size: 40px;
+}
