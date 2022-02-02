@@ -158,6 +158,7 @@ button {
   width: 130px;
   height: 50px;
   border-radius: 16px;
+  border-width: 1px;
 }
 
 button:hover {
@@ -215,6 +216,7 @@ button:link {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  gap: 12px;
 }
 
 .skills-list-item {
@@ -231,6 +233,9 @@ button:link {
   height: 66.72px;
   display: flex;
   align-items: center;
+  color: #253858;
+  font-weight: 500;
+  font-size: 15px;
 }
 
 .languages-list-item-img {
