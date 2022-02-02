@@ -179,3 +179,14 @@ button:link {
   color: #6070ff;
   background-color: white;
 }
+
+.about {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  margin: 88px 0px;
+  border-radius: 0 70px 0 0;
+}
+.about > * {
+  margin: 10px 24px;
+}
