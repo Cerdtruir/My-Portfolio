@@ -199,3 +199,43 @@ button:link {
 .about-text {
   color: #344563;
 }
+
+.about-button {
+  width: 160px;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.languages-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.skills-list-item {
+  width: 303px;
+  margin: 12px;
+}
+
+.languages-list-item {
+  background-color: #F7F7F9;
+  width: 303px;
+  height: 66.72px;
+  display: flex;
+  align-items: center;
+}
+
+.languages-list-item-img {
+  flex: 0 0 auto;
+  width: 48px;
+  height: 48px;
+  margin: 12px;
+}
+
+.languages-list-item-text {
+  text-align: center;
+}
