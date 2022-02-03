@@ -273,9 +273,20 @@ footer {
 }
 
 .footer-background {
-  background-color: #6070ff;
   border-radius: 70px 0 0 0;
   padding-bottom: 45px;
+  background:
+    url("images/Ellipse2.svg") 50% 20% no-repeat,
+    url("images/Ellipse14.svg") 100% 0% no-repeat,
+    url("images/Ellipse8.svg") 50% 0% no-repeat,
+    url("images/Ellipse7.svg") 0% 90% no-repeat,
+    url("images/Ellipse6.svg") 80% 5% no-repeat,
+    url("images/Ellipse5.svg") 0% 100% no-repeat,
+    url("images/Rectangle6.svg") 60% 0% no-repeat,
+    url("images/Rectangle5.svg") 0% 0% no-repeat,
+    url("images/Rectangle4.svg") 100% 100% no-repeat,
+    url("images/Ellipse13.svg") 0% 0% no-repeat;
+    background-color: #6070ff;
 }
 
 .footer-header {
