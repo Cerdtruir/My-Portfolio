@@ -57,7 +57,7 @@ a {
   margin: 24px;
   height: 600px;
   background:
-    url("images/Ellipse2.svg") 5% 70% no-repeat,
+    url("images/Ellipse12.svg") 5% 95% no-repeat,
     url("images/Ellipse11.svg") 100% 90% / 10% no-repeat,
     url("images/Ellipse14.svg") 15% 30% no-repeat,
     url("images/Ellipse8.svg") 25% 40% no-repeat,
@@ -364,5 +364,5 @@ textarea {
   .hero {
     margin: 0 260px;
   }
-  
+
 }
