@@ -124,6 +124,7 @@ li {
 
 .portfolio-flex > * {
   margin: 16px;
+  width: 95%;
 }
 
 .portfolio-right {
@@ -136,8 +137,6 @@ li {
 }
 
 .portfolio-img {
-  width: 300px;
-  flex: 1 1 auto;
   align-self: center;
   margin: 10px;
 }
@@ -363,7 +362,7 @@ textarea {
   background-color: #fff;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 820px) {
   .top-bar {
     margin: 25px 155px;
   }
@@ -392,6 +391,18 @@ textarea {
     flex-direction: row;
     justify-content: center;
     margin: 142px;
-    height: 500px;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+  }
+
+  .portfolio-flex > * {
+    width: 47%;
+    padding: 14px;
+  }
+
+  .portfolio-right {
+    height: 90%;
+    justify-content: flex-start;
   }
 }
