@@ -120,6 +120,7 @@ li {
   flex-direction: column;
   background-color: #fff;
   margin: 0 24px;
+  border-radius: 24px;
 }
 
 .portfolio-flex > * {
@@ -267,6 +268,7 @@ button:link {
   color: #253858;
   font-weight: 500;
   font-size: 15px;
+  border-radius: 8px;
 }
 
 .languages-list-item-img {
