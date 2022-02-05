@@ -135,6 +135,13 @@ li {
   margin: 16px 0;
 }
 
+.portfolio-img {
+  width: 300px;
+  flex: 1 1 auto;
+  align-self: center;
+  margin: 10px;
+}
+
 .portfolio-heading {
   font-size: 32px;
   font-weight: 700;
@@ -379,5 +386,12 @@ textarea {
 
   .hero-text {
     font-size: 20px;
+  }
+
+  .portfolio-flex {
+    flex-direction: row;
+    justify-content: center;
+    margin: 142px;
+    height: 500px;
   }
 }
