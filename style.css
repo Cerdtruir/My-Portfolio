@@ -252,7 +252,7 @@ button:link {
 }
 
 .skills-list-item {
-  width: 303px;
+  width: 50%;
   font-weight: 500;
   font-size: 20px;
   margin: 24px 0;
@@ -281,7 +281,7 @@ button:link {
 }
 
 .skills-line {
-  width: 303px;
+  width: auto;
   height: 1px;
   background-color: #dfe1e6;
 }
@@ -404,5 +404,45 @@ textarea {
   .portfolio-right {
     height: 90%;
     justify-content: flex-start;
+  }
+
+  .about {
+    flex-direction: row;
+    padding: 0 142px;
+    gap: 37px;
+  }
+
+  .about-left {
+    width: 40%;
+    margin: 142px 0;
+    gap: 12px;
+  }
+
+  .about-heading {
+    margin-top: 0;
+  }
+
+  .about-button {
+    margin-top: 20px;
+  }
+
+  .skills-list {
+    width: 60%;
+    margin: 142px 0;
+  }
+
+  .skills-list-item {
+    width: 100%;
+  }
+
+  .languages-list {
+    flex-direction: row;
+  }
+
+  .languages-list-item {
+    display: flex;
+    flex-direction: column;
+    width: 122px;
+    height: 120px;
   }
 }
