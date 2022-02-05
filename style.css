@@ -252,7 +252,7 @@ button:link {
 }
 
 .skills-list-item {
-  width: 50%;
+  width: 100%;
   font-weight: 500;
   font-size: 20px;
   margin: 24px 0;
@@ -280,10 +280,11 @@ button:link {
   text-align: center;
 }
 
-.skills-line {
-  width: auto;
+hr {
+  width: 100%;
   height: 1px;
   background-color: #dfe1e6;
+  border: none;
 }
 
 .skills-list-arrow-right {
