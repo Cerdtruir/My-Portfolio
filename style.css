@@ -365,4 +365,11 @@ textarea {
     margin: 0 260px;
   }
 
+  .hero-heading {
+    font-size: 48px;
+  }
+  
+  .hero-text {
+    font-size: 20px;
+  }
 }
