@@ -446,4 +446,26 @@ textarea {
     width: 122px;
     height: 120px;
   }
+
+  .footer-header {
+    padding-top: 142px;
+  }
+
+  .footer-text {
+    margin: 30px 30%;
+  }
+
+  form {
+    margin: 12px 35%;
+  }
+
+  form > * {
+    border-radius: 0;
+  }
+
+  #submit-button {
+    align-self: center;
+    border-radius: 8px;
+    margin-bottom: 80px;
+  }
 }
