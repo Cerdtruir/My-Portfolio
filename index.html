@@ -114,24 +114,26 @@
           src="images/Portfolio-screenshot2.png"
           alt="Portfolio Screenshot"
         />
-        <h2 class="portfolio-heading">Multi-Post Stories</h2>
-        <ul>
-          <li class="portfolio-list-first">Canopy</li>
-          <li class="portfolio-list-dot"></li>
-          <li class="portfolio-list-secondary">Back End Dev</li>
-          <li class="portfolio-list-dot"></li>
-          <li class="portfolio-list-secondary">2022</li>
-        </ul>
-        <p class="portfolio-text">
-          A daily selection of privately personalized reads; no accounts or
-          sign-ups required.
-        </p>
-        <ul>
-          <li class="language-text">html</li>
-          <li class="language-text">css</li>
-          <li class="language-text">javascript</li>
-        </ul>
-        <button type="button">See Project</button>
+        <div class="portfolio-text">
+          <h2 class="portfolio-heading">Multi-Post Stories</h2>
+          <ul>
+            <li class="portfolio-list-first">Canopy</li>
+            <li class="portfolio-list-dot"></li>
+            <li class="portfolio-list-secondary">Back End Dev</li>
+            <li class="portfolio-list-dot"></li>
+            <li class="portfolio-list-secondary">2022</li>
+          </ul>
+          <p class="portfolio-text">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required.
+          </p>
+          <ul>
+            <li class="language-text">html</li>
+            <li class="language-text">css</li>
+            <li class="language-text">javascript</li>
+          </ul>
+          <button type="button">See Project</button>
+        </div>
       </section>
       <section class="portfolio-flex">
         <img
@@ -289,13 +291,31 @@
           with it
         </p>
         <form action="https://formspree.io/f/xvolkbkv" method="post">
-          <input type="text" name="name" placeholder="Your Name" maxlength="30" required/>
-          <input type="email" name="email" placeholder="Email Address" required/>
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            maxlength="30"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            required
+          />
           <textarea
             name="message"
-            placeholder="Write your message here" required maxlength="500"
+            placeholder="Write your message here"
+            required
+            maxlength="500"
           ></textarea>
-          <input id="submit-button" type="submit" name="submit" value="Get In Touch"/>
+          <input
+            id="submit-button"
+            type="submit"
+            name="submit"
+            value="Get In Touch"
+          />
         </form>
       </div>
     </footer>
