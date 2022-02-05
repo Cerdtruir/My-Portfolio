@@ -45,7 +45,7 @@ nav {
   height: 600px;
   background:
     url("images/Ellipse2.svg") 5% 70% no-repeat,
-    url("images/Ellipse11.svg") 10% 51% / 20% no-repeat,
+    url("images/Ellipse11.svg") 100% 90% / 10% no-repeat,
     url("images/Ellipse14.svg") 15% 30% no-repeat,
     url("images/Ellipse8.svg") 25% 40% no-repeat,
     url("images/Ellipse7.svg") 35% 95% no-repeat,
@@ -57,7 +57,7 @@ nav {
     url("images/Rectangle5.svg") 95% 35% no-repeat,
     url("images/Rectangle4.svg") 40% 5% no-repeat,
     url("images/Ellipse13.svg") 70% 25% no-repeat,
-    url("images/Ellipse3.svg") 0% 0% / 30% no-repeat,
+    url("images/Ellipse3.svg") 0% 0% / 10% no-repeat,
     url("images/Ellipse11.svg") 100% 20% no-repeat;
 }
 
