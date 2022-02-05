@@ -29,6 +29,19 @@ nav {
   margin: 0 10px 0 0;
 }
 
+.header-menu-items {
+  margin-left: auto;
+  display: none;
+  gap: 32px;
+  font-weight: 500;
+  font-size: 15px;
+  color: #344563;
+}
+
+a {
+  text-decoration: none;
+}
+
 .hamburger {
   width: 35px;
   height: 4px;
