@@ -282,6 +282,10 @@ button:link {
   text-align: center;
 }
 
+.skills-list-hr {
+  width: 100%;
+}
+
 hr {
   width: 100%;
   height: 1px;
@@ -392,10 +396,8 @@ textarea {
 
   .portfolio-flex {
     flex-direction: row;
-    justify-content: center;
     margin: 27px 142px;
     align-items: center;
-    justify-content: space-around;
     padding: 0;
   }
 
@@ -461,7 +463,11 @@ textarea {
     margin: 12px 35%;
   }
 
-  form > * {
+  input {
+    border-radius: 0;
+  }
+
+  textarea {
     border-radius: 0;
   }
 
