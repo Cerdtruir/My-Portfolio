@@ -126,12 +126,12 @@ li {
   margin: 16px;
 }
 
-.portfolio-left {
+.portfolio-right {
   display: flex;
   flex-direction: column;
 }
 
-.portfolio-left > * {
+.portfolio-right > * {
   margin: 16px 0;
 }
 
