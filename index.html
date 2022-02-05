@@ -11,7 +11,12 @@
     <header>
       <section class="top-bar">
         <h2 class="logo">My Portfolio</h2>
-        <nav>
+        <ul>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <nav class="hamburger-nav">
           <div class="hamburger"></div>
           <div class="hamburger"></div>
           <div class="hamburger"></div>
@@ -77,7 +82,7 @@
         </ul>
       </section>
     </header>
-    <div class="portfolio-grid">
+    <div id="portfolio" class="portfolio-grid">
       <section class="portfolio-flex">
         <img
           class="portfolio-img"
@@ -179,7 +184,7 @@
         <button type="button">See Project</button>
       </section>
     </div>
-    <section class="about">
+    <section id="about" class="about">
       <h2 class="about-heading">About<br />Me</h2>
       <p class="about-text">
         I’m a software developer! I can help you build a product, feature or
@@ -276,7 +281,7 @@
       </ul>
     </section>
     <footer>
-      <div class="footer-background">
+      <div id="contact" class="footer-background">
         <h2 class="footer-header">Contact Me</h2>
         <p class="footer-text">
           If you have an application you are interested in developing, a feature
