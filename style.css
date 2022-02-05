@@ -1,7 +1,15 @@
+body {
+  background-color: #e5e5e5;
+  margin: 0;
+  font-family: Poppins, sans-serif;
+}
+
 header {
   display: flex;
   flex-direction: column;
-  font-family: Poppins, sans-serif;
+  background-color: #fff;
+  border-radius: 0 0 0 100px;
+  margin-bottom: 100px;
 }
 
 .top-bar {
@@ -12,7 +20,6 @@ header {
 
 .logo {
   font-weight: 700;
-  line-height: 20px;
   text-align: center;
   margin: 10px 0 10px 12px;
   color: #6070ff;
@@ -38,7 +45,7 @@ nav {
   height: 600px;
   background:
     url("images/Ellipse2.svg") 5% 70% no-repeat,
-    url("images/Ellipse11.svg") 10% 60% no-repeat,
+    url("images/Ellipse11.svg") 10% 51% / 20% no-repeat,
     url("images/Ellipse14.svg") 15% 30% no-repeat,
     url("images/Ellipse8.svg") 25% 40% no-repeat,
     url("images/Ellipse7.svg") 35% 95% no-repeat,
@@ -50,22 +57,23 @@ nav {
     url("images/Rectangle5.svg") 95% 35% no-repeat,
     url("images/Rectangle4.svg") 40% 5% no-repeat,
     url("images/Ellipse13.svg") 70% 25% no-repeat,
-    url("images/Ellipse3.svg") 2% 1% no-repeat;
+    url("images/Ellipse3.svg") 0% 0% / 30% no-repeat,
+    url("images/Ellipse11.svg") 100% 20% no-repeat;
 }
 
 .hero-heading {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 40px;
+  color: #172b4d;
 }
 
 .hero-text {
   background-color: #fff;
-  font-size: 16px;
+  color: #344563;
 }
 
 .connect-text {
   font-weight: 500;
-  font-size: 16px;
   color: #7f8cff;
 }
 
@@ -87,12 +95,81 @@ li {
   text-align: center;
 }
 
+.portfolio-grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 88px;
+}
+
+.portfolio-flex {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  margin: 0 24px;
+  border-radius: 16px;
+}
+
+.portfolio-flex > * {
+  margin: 16px;
+}
+
+.portfolio-heading {
+  font-size: 32px;
+  font-weight: 700;
+  color: #172b4d;
+}
+
+.portfolio-list-first {
+  font-weight: 600;
+  font-size: 13px;
+  color: #344563;
+}
+
+.portfolio-list-dot {
+  height: 8px;
+  width: 8px;
+  background-color: #c1c7d0;
+  border-radius: 50%;
+}
+
+.portfolio-list-secondary {
+  color: #7a869a;
+  font-size: 13px;
+}
+
+.portfolio-text {
+  color: #344563;
+  font-size: 15px;
+}
+
+.language-text {
+  border-radius: 8px;
+  background-color: #ebebff;
+  padding: 4px 12px;
+  color: #6070ff;
+}
+
+button {
+  background-color: #fff;
+  border-color: #396df2;
+  color: #396df2;
+  padding: 12px;
+  font-weight: 500;
+  font-size: 17px;
+  width: 130px;
+  height: 50px;
+  border-radius: 16px;
+  border-width: 1px;
+}
+
 button:hover {
   background-color: #6070ff;
+  color: #fff;
 }
 
 button:visited {
   background-color: #2230d2;
+  color: #fff;
 }
 
 button:disabled {
@@ -103,4 +180,92 @@ button:disabled {
 button:link {
   color: #6070ff;
   background-color: white;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  margin: 88px 0;
+  border-radius: 0 70px 0 0;
+}
+
+.about > * {
+  margin: 10px 24px;
+}
+
+.about-heading {
+  margin-top: 114px;
+  color: #172b4d;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.about-text {
+  color: #344563;
+}
+
+.about-button {
+  width: 160px;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 24px 36px;
+}
+
+.languages-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.skills-list-item {
+  width: 303px;
+  font-weight: 500;
+  font-size: 20px;
+  margin: 24px 0;
+}
+
+.languages-list-item {
+  background-color: #f7f7f9;
+  width: 303px;
+  height: 66.72px;
+  display: flex;
+  align-items: center;
+  color: #253858;
+  font-weight: 500;
+  font-size: 15px;
+  border-radius: 8px;
+}
+
+.languages-list-item-img {
+  flex: 0 0 auto;
+  width: 48px;
+  height: 48px;
+  margin: 12px;
+}
+
+.languages-list-item-text {
+  text-align: center;
+}
+
+.skills-line {
+  width: 303px;
+  height: 1px;
+  background-color: #dfe1e6;
+}
+
+.skills-list-arrow-right {
+  float: right;
+  margin-right: 40px;
+}
+
+.skills-list-arrow-down {
+  float: right;
+  margin-right: 40px;
+  transform: rotate(90deg);
 }
