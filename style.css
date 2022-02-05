@@ -56,7 +56,7 @@ a {
   justify-content: center;
   margin: 24px;
   height: 600px;
-  background:
+  background: 
     url("images/Ellipse12.svg") 5% 95% no-repeat,
     url("images/Ellipse11.svg") 100% 90% / 10% no-repeat,
     url("images/Ellipse14.svg") 15% 30% no-repeat,
@@ -290,7 +290,6 @@ footer {
   border-radius: 70px 0 0 0;
   padding-bottom: 45px;
   background:
-    url("images/Ellipse2.svg") 50% 20% no-repeat,
     url("images/Ellipse14.svg") 100% 0% no-repeat,
     url("images/Ellipse8.svg") 50% 0% no-repeat,
     url("images/Ellipse7.svg") 0% 90% no-repeat,
@@ -348,15 +347,15 @@ textarea {
   background-color: #fff;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
   .top-bar {
     margin: 25px 155px;
   }
-  
+
   .header-menu-items {
     display: flex;
   }
-  
+
   .hamburger {
     display: none;
   }
@@ -368,7 +367,7 @@ textarea {
   .hero-heading {
     font-size: 48px;
   }
-  
+
   .hero-text {
     font-size: 20px;
   }
