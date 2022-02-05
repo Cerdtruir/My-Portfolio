@@ -56,7 +56,7 @@ a {
   justify-content: center;
   margin: 24px;
   height: 600px;
-  background: 
+  background:
     url("images/Ellipse12.svg") 5% 95% no-repeat,
     url("images/Ellipse11.svg") 100% 90% / 10% no-repeat,
     url("images/Ellipse14.svg") 15% 30% no-repeat,
@@ -245,18 +245,18 @@ button:link {
   margin: 24px 36px;
 }
 
-.languages-list {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 12px;
-}
-
 .skills-list-item {
   width: 100%;
   font-weight: 500;
   font-size: 20px;
   margin: 24px 0;
+}
+
+.languages-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
 }
 
 .languages-list-item {
