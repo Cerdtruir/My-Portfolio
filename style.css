@@ -126,6 +126,15 @@ li {
   margin: 16px;
 }
 
+.portfolio-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-left > * {
+  margin: 16px 0;
+}
+
 .portfolio-heading {
   font-size: 32px;
   font-weight: 700;
