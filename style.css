@@ -167,7 +167,7 @@ button:hover {
   color: #fff;
 }
 
-button:visited {
+button:active {
   background-color: #2230d2;
   color: #fff;
 }
