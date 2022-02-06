@@ -75,22 +75,9 @@ a {
 }
 
 .hero-heading {
-  animation: 2s heading-slidein;
   font-weight: 700;
   font-size: 40px;
   color: #172b4d;
-}
-
-@keyframes heading-slidein {
-  from {
-    margin-left:100%;
-    width:300%
-  }
-
-  to {
-    margin-left:0%;
-    width:100%;
-  }
 }
 
 .hero-text {
@@ -144,19 +131,6 @@ li {
 .portfolio-right {
   display: flex;
   flex-direction: column;
-  animation: 1s portfolio-right-slidein;
-}
-
-@keyframes portfolio-right-slidein {
-  from {
-    margin-left:100%;
-    width:300%
-  }
-
-  to {
-    margin-left:0%;
-    width:100%;
-  }
 }
 
 .portfolio-right > * {
@@ -167,18 +141,6 @@ li {
   align-self: center;
   margin: 10px;
   animation: 1s portfolio-img-slidein;
-}
-
-@keyframes portfolio-img-slidein {
-  from {
-    margin-left:100%;
-    width:300%
-  }
-
-  to {
-    margin-right:0%;
-    width:100%;
-  }
 }
 
 .portfolio-heading {
@@ -429,6 +391,19 @@ textarea {
 
   .hero-heading {
     font-size: 48px;
+    animation: 1s heading-slidein;
+  }
+
+  @keyframes heading-slidein {
+    from {
+      margin-left:100%;
+      width:300%
+    }
+  
+    to {
+      margin-left:0%;
+      width:100%;
+    }
   }
 
   .hero-text {
@@ -456,6 +431,35 @@ textarea {
   .portfolio-right {
     height: 90%;
     justify-content: flex-start;
+    animation: 1s portfolio-right-slidein;
+  }
+
+  @keyframes portfolio-right-slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+  .portfolio-img {
+    animation: 1s portfolio-img-slidein;
+  }
+
+  @keyframes portfolio-img-slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-right: 0%;
+      width: 100%;
+    }
   }
 
   .about {
