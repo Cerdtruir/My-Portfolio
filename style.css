@@ -144,6 +144,19 @@ li {
 .portfolio-right {
   display: flex;
   flex-direction: column;
+  animation: 1s portfolio-right-slidein;
+}
+
+@keyframes portfolio-right-slidein {
+  from {
+    margin-left:100%;
+    width:300%
+  }
+
+  to {
+    margin-left:0%;
+    width:100%;
+  }
 }
 
 .portfolio-right > * {
@@ -153,6 +166,19 @@ li {
 .portfolio-img {
   align-self: center;
   margin: 10px;
+  animation: 1s portfolio-img-slidein;
+}
+
+@keyframes portfolio-img-slidein {
+  from {
+    margin-left:100%;
+    width:300%
+  }
+
+  to {
+    margin-right:0%;
+    width:100%;
+  }
 }
 
 .portfolio-heading {
