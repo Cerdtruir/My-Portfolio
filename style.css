@@ -45,7 +45,7 @@ nav {
   height: 600px;
   background:
     url("images/Ellipse2.svg") 5% 70% no-repeat,
-    url("images/Ellipse11.svg") 10% 51% / 20% no-repeat,
+    url("images/Ellipse11.svg") 100% 90% / 10% no-repeat,
     url("images/Ellipse14.svg") 15% 30% no-repeat,
     url("images/Ellipse8.svg") 25% 40% no-repeat,
     url("images/Ellipse7.svg") 35% 95% no-repeat,
@@ -57,7 +57,7 @@ nav {
     url("images/Rectangle5.svg") 95% 35% no-repeat,
     url("images/Rectangle4.svg") 40% 5% no-repeat,
     url("images/Ellipse13.svg") 70% 25% no-repeat,
-    url("images/Ellipse3.svg") 0% 0% / 30% no-repeat,
+    url("images/Ellipse3.svg") 0% 0% / 10% no-repeat,
     url("images/Ellipse11.svg") 100% 20% no-repeat;
 }
 
@@ -167,7 +167,7 @@ button:hover {
   color: #fff;
 }
 
-button:visited {
+button:active {
   background-color: #2230d2;
   color: #fff;
 }
@@ -186,7 +186,7 @@ button:link {
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  margin: 88px 0;
+  margin-top: 88px;
   border-radius: 0 70px 0 0;
 }
 
@@ -268,4 +268,69 @@ button:link {
   float: right;
   margin-right: 40px;
   transform: rotate(90deg);
+}
+
+footer {
+  background-color: #fff;
+}
+
+.footer-background {
+  border-radius: 70px 0 0 0;
+  padding-bottom: 45px;
+  background:
+    url("images/Ellipse2.svg") 50% 20% no-repeat,
+    url("images/Ellipse14.svg") 100% 0% no-repeat,
+    url("images/Ellipse8.svg") 50% 0% no-repeat,
+    url("images/Ellipse7.svg") 0% 90% no-repeat,
+    url("images/Ellipse6.svg") 80% 5% no-repeat,
+    url("images/Ellipse5.svg") 0% 100% no-repeat,
+    url("images/Rectangle6.svg") 60% 0% no-repeat,
+    url("images/Rectangle5.svg") 0% 0% no-repeat,
+    url("images/Rectangle4.svg") 100% 100% no-repeat,
+    url("images/Ellipse13.svg") 0% 0% no-repeat;
+  background-color: #6070ff;
+}
+
+.footer-header {
+  margin: 0 24px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  color: #fff;
+  padding-top: 103px;
+}
+
+.footer-text {
+  margin: 12px 24px;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+}
+
+form {
+  margin: 30px 24px 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+input {
+  border-radius: 8px;
+  border: 1px solid #cfd8dc;
+  height: 48px;
+}
+
+textarea {
+  border-radius: 8px;
+  border: 1px solid #cfd8dc;
+  height: 170px;
+  padding: 15px;
+}
+
+.submit-button {
+  width: 140px;
+  padding: 12px 16px;
+  color: #6070ff;
+  font-weight: 500;
+  font-size: 17px;
 }

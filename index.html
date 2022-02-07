@@ -275,5 +275,24 @@
         <li><div class="skills-line"></div></li>
       </ul>
     </section>
+    <footer>
+      <div class="footer-background">
+        <h2 class="footer-header">Contact Me</h2>
+        <p class="footer-text">
+          If you have an application you are interested in developing, a feature
+          that you need built or a project that needs coding. I’d love to help
+          with it
+        </p>
+        <form id="contact-form" action="https://formspree.io/f/xvolkbkv" method="post">
+          <input type="text" name="name" placeholder="Your Name" maxlength="30" required/>
+          <input type="email" name="email" placeholder="Email Address" required/>
+          <textarea
+            name="message"
+            placeholder="Write your message here" required maxlength="500"
+          ></textarea>
+          <button class="submit-button" type="submit" form="contact-form" value="Get In Touch">Get In Touch</button>
+        </form>
+      </div>
+    </footer>
   </body>
 </html>
