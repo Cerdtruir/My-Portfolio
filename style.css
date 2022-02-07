@@ -312,7 +312,7 @@ footer {
 }
 
 .footer-background {
-  border-radius: 70px 0 0 0;
+  border-radius: 70px 0 0;
   padding-bottom: 45px;
   background:
     url("images/Ellipse14.svg") 100% 0% no-repeat,
@@ -344,7 +344,7 @@ footer {
 }
 
 form {
-  margin: 30px 24px 0 24px;
+  margin: 30px 24px 0;
   display: flex;
   flex-direction: column;
   gap: 18px;
@@ -397,9 +397,9 @@ textarea {
   @keyframes heading-slidein {
     from {
       margin-left: 100%;
-      width: 300%
+      width: 300%;
     }
-  
+
     to {
       margin-left: 0%;
       width: 100%;
@@ -437,9 +437,9 @@ textarea {
   @keyframes portfolio-right-slidein {
     from {
       margin-left: 100%;
-      width: 300%
+      width: 300%;
     }
-  
+
     to {
       margin-left: 0%;
       width: 100%;
@@ -453,9 +453,9 @@ textarea {
   @keyframes portfolio-img-slidein {
     from {
       margin-left: 100%;
-      width: 300%
+      width: 300%;
     }
-  
+
     to {
       margin-right: 0%;
       width: 100%;
