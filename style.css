@@ -140,7 +140,6 @@ li {
 .portfolio-img {
   align-self: center;
   margin: 10px;
-  animation: 1s portfolio-img-slidein;
 }
 
 .portfolio-heading {
