@@ -190,13 +190,14 @@ button {
   height: 50px;
   border-radius: 16px;
   border-width: 1px;
-  transition: background-color 0.5s, transform 0.5s;
+  transition: background-color 0.5s, transform 0.5s, font-size 0.5s;
 }
 
 button:hover {
   background-color: #6070ff;
   color: #fff;
   transform: scale(1.1);
+  font-size: 20px;
 }
 
 button:visited {
