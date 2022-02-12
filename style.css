@@ -43,10 +43,7 @@ a {
 }
 
 .hamburger {
-  width: 35px;
-  height: 4px;
-  background-color: #6070ff;
-  margin: 6px 0;
+  font-size: 32px;
 }
 
 .hero {
