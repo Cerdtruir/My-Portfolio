@@ -84,3 +84,61 @@ const portfolioObjects = {
 };
 
 const portfolioArray = Object.keys(portfolioObjects);
+
+  const portfolioButton = document.createElement('button');
+
+  portfolioButton.addEventListener('click', () => {
+    const popupDiv = document.createElement('div');
+    const divContainer = document.createElement('div');
+    const topBar = document.createElement('div');
+    const h2 = document.createElement('h2');
+    const close = document.createElement('span');
+    const subheading = document.createElement('ul');
+    const image = document.createElement('img');
+    const bottomFlex = document.createElement('div');
+    const rightBottomFlex = document.createElement('div');
+    const description = document.createElement('p');
+    const buttons = document.createElement('div');
+    const languages = document.createElement('ul');
+    const line = document.createElement('hr');
+    const source = document.createElement('button');
+    const liveVersion = document.createElement('button');
+
+    popupDiv.classList.add('popupdiv');
+    divContainer.classList.add('div-container');
+    topBar.classList.add('portfolio-top-bar');
+    h2.classList.add('portfolio-h2');
+    subheading.classList.add('subheading');
+    image.classList.add('popup-image');
+    bottomFlex.classList.add('popup-bottom-flex');
+    rightBottomFlex.classList.add('rightbottomflex');
+    description.classList.add('description');
+    buttons.classList.add('popup-buttons');
+    languages.classList.add('languages');
+    line.classList.add('line');
+    liveVersion.classList.add('liveVersion');
+
+    h2.textContent = portfolioObjects[object].heading;
+    subheading.innerHTML = portfolioObjects[object].subheading;
+    image.src = portfolioObjects[object].image;
+    description.textContent = portfolioObjects[object].description;
+    languages.innerHTML = portfolioObjects[object].languages;
+    source.href = portfolioObjects[object].source;
+    source.textContent = 'Source';
+    liveVersion.href = portfolioObjects[object].liveVersion;
+    liveVersion.textContent = 'Live Site';
+    close.textContent = 'x';
+    close.classList.add('close');
+    close.addEventListener('click', () => {
+      const popupDiv = document.querySelector('.popupdiv');
+      document.body.removeChild(popupDiv);
+    });
+
+    popupDiv.append(divContainer);
+    divContainer.append(topBar, subheading, image, bottomFlex);
+    topBar.append(h2, close);
+    bottomFlex.append(description, rightBottomFlex);
+    rightBottomFlex.append(languages, line, buttons);
+    buttons.append(source, liveVersion);
+    document.body.insertBefore(popupDiv, header);
+  });
