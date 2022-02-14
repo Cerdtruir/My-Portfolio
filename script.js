@@ -85,8 +85,31 @@ const portfolioObjects = {
 
 const portfolioArray = Object.keys(portfolioObjects);
 
+portfolioArray.forEach((object) => {
+  const header = document.querySelector('.header');
+  const portfolioFlex = document.createElement('section');
+  const portfolioImage = document.createElement('img');
+  const portfolioRight = document.createElement('div');
+  const portfolioHeading = document.createElement('h2');
+  const portfolioList = document.createElement('ul');
+  const portfolioText = document.createElement('p');
+  const portfolioLanguages = document.createElement('ul');
   const portfolioButton = document.createElement('button');
 
+  portfolioFlex.classList.add('portfolio-flex');
+  portfolioImage.classList.add('portfolio-img');
+  portfolioRight.classList.add('portfolio-right');
+  portfolioHeading.classList.add('portfolio-heading');
+  portfolioList.classList.add('portfolio-list');
+  portfolioText.classList.add('portfolio-text');
+  portfolioLanguages.classList.add('portfolio-languages');
+
+  portfolioHeading.textContent = portfolioObjects[object].heading;
+  portfolioList.innerHTML = portfolioObjects[object].subheading;
+  portfolioImage.src = portfolioObjects[object].image;
+  portfolioText.textContent = portfolioObjects[object].shortDescription;
+  portfolioLanguages.innerHTML = portfolioObjects[object].languages;
+  portfolioButton.textContent = portfolioObjects[object].seeProjectButton;
   portfolioButton.addEventListener('click', () => {
     const popupDiv = document.createElement('div');
     const divContainer = document.createElement('div');
@@ -142,3 +165,14 @@ const portfolioArray = Object.keys(portfolioObjects);
     buttons.append(source, liveVersion);
     document.body.insertBefore(popupDiv, header);
   });
+
+  portfolioFlex.append(portfolioImage, portfolioRight);
+  portfolioRight.append(
+    portfolioHeading,
+    portfolioList,
+    portfolioText,
+    portfolioLanguages,
+    portfolioButton,
+  );
+  document.body.querySelector('#portfolio').append(portfolioFlex);
+});
