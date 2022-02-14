@@ -256,7 +256,7 @@ button:link {
   background-color: white;
 }
 
-.popupDiv {
+.popupdiv {
   height: 100%;
   position: fixed;
   width: 100%;
@@ -272,7 +272,7 @@ button:link {
   background-color: #fff;
   width: 80%;
   height: max-content;
-  margin: 2% auto 2%;
+  margin: 2% auto;
   border-radius: 20px;
   align-self: center;
 }
@@ -302,17 +302,15 @@ button:link {
   max-height: 100%;
   max-width: 95%;
   align-self: center;
-  flex: "1 1 auto";
 }
 
 .popup-bottom-flex {
   display: flex;
   flex-direction: column;
-  margin: 20px 20px;
-  flex: "1 1 auto";
+  margin: 20px;
 }
 
-.rightBottomFlex {
+.rightbottomflex {
   margin-top: auto;
 }
 
@@ -593,7 +591,7 @@ textarea {
     margin-right: 10px;
   }
 
-  .rightBottomFlex {
+  .rightbottomflex {
     margin-top: 0;
     margin-left: auto;
   }
