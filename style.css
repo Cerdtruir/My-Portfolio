@@ -47,6 +47,10 @@ nav {
   font-size: 32px;
 }
 
+.menu-close-button:hover {
+  cursor: pointer;
+}
+
 .header-menu-items-mobile {
   display: flex;
   flex-direction: column;
@@ -88,6 +92,10 @@ a {
 
 .hamburger {
   font-size: 32px;
+}
+
+.hamburger:hover {
+  cursor: pointer;
 }
 
 .hero {
