@@ -82,3 +82,5 @@ const portfolioObjects = {
     liveVersion: 'github.com',
   },
 };
+
+const portfolioArray = Object.keys(portfolioObjects);
