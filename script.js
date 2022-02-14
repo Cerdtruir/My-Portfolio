@@ -176,3 +176,16 @@ portfolioArray.forEach((object) => {
   );
   document.body.querySelector('#portfolio').append(portfolioFlex);
 });
+
+const formEmail = document.getElementById('form-email');
+const form = document.getElementById('form');
+let errorMessage = document.querySelector('.error-message')
+
+const checkEmail = /^[a-z0-9@.]+$/;
+
+form.addEventListener('submit', function (event) {
+  if (checkEmail.test(formEmail.value) === false) {
+    event.preventDefault()
+    errorMessage.textContent = 'Please only use lower case letters in your email';
+  }
+});
