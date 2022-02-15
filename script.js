@@ -196,6 +196,13 @@ form.addEventListener('submit', function (event) {
     errorMessage.textContent = 'Please only use lower case letters in your email';
   }
 });
+
+//Form Local Storage
+let formObj = {}
+let stringifiedObject = ''
+let parsedObject = {}
+const formArray = [formName, formEmail, formMessage]
+
 formArray.forEach(formInput => {
   formInput.addEventListener('input', function(data) {
     addData(this);
