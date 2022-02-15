@@ -203,6 +203,17 @@ let stringifiedObject = ''
 let parsedObject = {}
 const formArray = [formName, formEmail, formMessage]
 
+//Check For And Add Saved Data
+if (localStorage.getItem('formData')) {
+  parsedObject = JSON.parse(localStorage.getItem('formData'));
+  formName.value = parsedObject.name
+  formEmail.value = parsedObject.email
+  formMessage.value = parsedObject.message
+  addData(formName)
+  addData(formEmail)
+  addData(formMessage)
+}
+
 formArray.forEach(formInput => {
   formInput.addEventListener('input', function(data) {
     addData(this);
