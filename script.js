@@ -1,3 +1,4 @@
+// Mobile Menu
 const mobileMenu = document.getElementById('mobile-nav');
 
 document.getElementById('hamburger').onclick = function () {
@@ -19,6 +20,8 @@ document.querySelector('.header-menu-li-mobile-second').onclick = function () {
 document.querySelector('.header-menu-li-mobile-third').onclick = function () {
   mobileMenu.style.display = 'none';
 };
+
+//Portfolio Objects Object
 
 const portfolioObjects = {
   portfolioObject1: {
@@ -83,6 +86,8 @@ const portfolioObjects = {
   },
 };
 
+//Portfolio Generator
+
 const portfolioArray = Object.keys(portfolioObjects);
 
 portfolioArray.forEach((object) => {
@@ -110,6 +115,7 @@ portfolioArray.forEach((object) => {
   portfolioText.textContent = portfolioObjects[object].shortDescription;
   portfolioLanguages.innerHTML = portfolioObjects[object].languages;
   portfolioButton.textContent = portfolioObjects[object].seeProjectButton;
+  // Portfolio Modal Generator
   portfolioButton.addEventListener('click', () => {
     const popupDiv = document.createElement('div');
     const divContainer = document.createElement('div');
@@ -176,6 +182,8 @@ portfolioArray.forEach((object) => {
   );
   document.body.querySelector('#portfolio').append(portfolioFlex);
 });
+
+//Form Check If Valid Email
 
 const formEmail = document.getElementById('form-email');
 const form = document.getElementById('form');
