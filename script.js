@@ -196,3 +196,8 @@ form.addEventListener('submit', function (event) {
     errorMessage.textContent = 'Please only use lower case letters in your email';
   }
 });
+function addData(data) {
+  formObj[data.name] = data.value
+  stringifiedObject = JSON.stringify(formObj)
+  localStorage.setItem('formData', stringifiedObject);
+}
