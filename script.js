@@ -84,7 +84,7 @@ const portfolioObjects = {
 };
 
 const portfolioArray = Object.keys(portfolioObjects);
-let i = 0
+let i = 0;
 portfolioArray.forEach((object) => {
   const header = document.querySelector('.header');
   const portfolioFlex = document.createElement('section');
@@ -97,11 +97,10 @@ portfolioArray.forEach((object) => {
   const portfolioButton = document.createElement('button');
 
   portfolioFlex.classList.add('portfolio-flex');
-  if (i%2 === 0) {
-    portfolioFlex.classList.add('portfolio-flex-row')
-  }
-  else {
-    portfolioFlex.classList.add('portfolio-flex-row-reverse')
+  if (i % 2 === 0) {
+    portfolioFlex.classList.add('portfolio-flex-row');
+  } else {
+    portfolioFlex.classList.add('portfolio-flex-row-reverse');
   }
   portfolioImage.classList.add('portfolio-img');
   portfolioRight.classList.add('portfolio-right');
@@ -181,5 +180,5 @@ portfolioArray.forEach((object) => {
     portfolioButton,
   );
   document.body.querySelector('#portfolio').append(portfolioFlex);
-  i++
+  i += 1;
 });
