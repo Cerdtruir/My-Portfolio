@@ -196,6 +196,12 @@ form.addEventListener('submit', function (event) {
     errorMessage.textContent = 'Please only use lower case letters in your email';
   }
 });
+formArray.forEach(formInput => {
+  formInput.addEventListener('input', function(data) {
+    addData(this);
+  })
+});
+
 function addData(data) {
   formObj[data.name] = data.value
   stringifiedObject = JSON.stringify(formObj)
