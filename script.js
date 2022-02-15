@@ -182,8 +182,10 @@ portfolioArray.forEach((object) => {
 });
 
 //Form Check If Valid Email
-const formEmail = document.getElementById('form-email');
 const form = document.getElementById('form');
+const formName = document.getElementById('form-name');
+const formEmail = document.getElementById('form-email');
+const formMessage = document.getElementById('form-message');
 let errorMessage = document.querySelector('.error-message')
 
 const checkEmail = /^[a-z0-9@.]+$/;
