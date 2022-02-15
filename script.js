@@ -21,7 +21,7 @@ document.querySelector('.header-menu-li-mobile-third').onclick = function () {
   mobileMenu.style.display = 'none';
 };
 
-//Portfolio Objects Object
+// Portfolio Objects Object
 const portfolioObjects = {
   portfolioObject1: {
     heading: 'Tonic',
@@ -85,7 +85,7 @@ const portfolioObjects = {
   },
 };
 
-//Portfolio Generator
+// Portfolio Generator
 const portfolioArray = Object.keys(portfolioObjects);
 
 portfolioArray.forEach((object) => {
@@ -181,47 +181,47 @@ portfolioArray.forEach((object) => {
   document.body.querySelector('#portfolio').append(portfolioFlex);
 });
 
-//Form Check If Valid Email
+// Form Check If Valid Email
 const form = document.getElementById('form');
 const formName = document.getElementById('form-name');
 const formEmail = document.getElementById('form-email');
 const formMessage = document.getElementById('form-message');
-let errorMessage = document.querySelector('.error-message')
+const errorMessage = document.querySelector('.error-message');
 
 const checkEmail = /^[a-z0-9@.]+$/;
 
-form.addEventListener('submit', function (event) {
+form.addEventListener('submit', (event) => {
   if (checkEmail.test(formEmail.value) === false) {
-    event.preventDefault()
+    event.preventDefault();
     errorMessage.textContent = 'Please only use lower case letters in your email';
   }
 });
 
-//Form Local Storage
-let formObj = {}
-let stringifiedObject = ''
-let parsedObject = {}
-const formArray = [formName, formEmail, formMessage]
-
-//Check For And Add Saved Data
-if (localStorage.getItem('formData')) {
-  parsedObject = JSON.parse(localStorage.getItem('formData'));
-  formName.value = parsedObject.name
-  formEmail.value = parsedObject.email
-  formMessage.value = parsedObject.message
-  addData(formName)
-  addData(formEmail)
-  addData(formMessage)
-}
-
-formArray.forEach(formInput => {
-  formInput.addEventListener('input', function(data) {
-    addData(this);
-  })
-});
+// Form Local Storage
+const formObj = {};
+let stringifiedObject = '';
+let parsedObject = {};
+const formArray = [formName, formEmail, formMessage];
 
 function addData(data) {
-  formObj[data.name] = data.value
-  stringifiedObject = JSON.stringify(formObj)
+  formObj[data.name] = data.value;
+  stringifiedObject = JSON.stringify(formObj);
   localStorage.setItem('formData', stringifiedObject);
 }
+
+// Check For And Add Saved Data
+if (localStorage.getItem('formData')) {
+  parsedObject = JSON.parse(localStorage.getItem('formData'));
+  formName.value = parsedObject.name;
+  formEmail.value = parsedObject.email;
+  formMessage.value = parsedObject.message;
+  addData(formName);
+  addData(formEmail);
+  addData(formMessage);
+}
+
+formArray.forEach((formInput) => {
+  formInput.addEventListener('input', function () {
+    addData(this);
+  });
+});
