@@ -400,6 +400,10 @@ textarea {
     padding: 0;
   }
 
+  .portfolio-flex:hover {
+    border: 2px solid #a7aeff;
+  }
+
   .portfolio-flex > * {
     width: 47%;
     padding: 14px;
