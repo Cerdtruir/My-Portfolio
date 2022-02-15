@@ -22,7 +22,6 @@ document.querySelector('.header-menu-li-mobile-third').onclick = function () {
 };
 
 //Portfolio Objects Object
-
 const portfolioObjects = {
   portfolioObject1: {
     heading: 'Tonic',
@@ -87,7 +86,6 @@ const portfolioObjects = {
 };
 
 //Portfolio Generator
-
 const portfolioArray = Object.keys(portfolioObjects);
 
 portfolioArray.forEach((object) => {
@@ -184,7 +182,6 @@ portfolioArray.forEach((object) => {
 });
 
 //Form Check If Valid Email
-
 const formEmail = document.getElementById('form-email');
 const form = document.getElementById('form');
 let errorMessage = document.querySelector('.error-message')
