@@ -123,6 +123,10 @@ li {
   border-radius: 16px;
 }
 
+.portfolio-flex-reverse {
+  flex-direction: column-reverse;
+}
+
 .portfolio-flex > * {
   margin: 16px;
   width: 95%;
