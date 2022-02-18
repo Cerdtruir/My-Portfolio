@@ -439,11 +439,8 @@ textarea {
   }
 
   .portfolio-flex:hover {
-    opacity: 1;
-  }
-
-  .portfolio-flex:hover {
     border: 2px solid #a7aeff;
+    opacity: 1;
   }
 
   .portfolio-flex > * {
