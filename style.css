@@ -8,8 +8,6 @@ header {
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  border-radius: 0 0 0 100px;
-  margin-bottom: 100px;
 }
 
 .top-bar {
@@ -49,13 +47,14 @@ a {
   margin: 6px 0;
 }
 
-.hero {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  margin: 24px;
-  height: 600px;
+.hero-section {
+  background-color: #fff;
+  margin-bottom: 100px;
+  border-radius: 0 0 0 100px;
+  
+}
+
+.hero-background {
   background:
     url("images/Ellipse12.svg") 5% 95% no-repeat,
     url("images/Ellipse11.svg") 100% 90% / 10% no-repeat,
@@ -72,6 +71,16 @@ a {
     url("images/Ellipse13.svg") 70% 25% no-repeat,
     url("images/Ellipse3.svg") 0% 0% / 10% no-repeat,
     url("images/Ellipse11.svg") 100% 20% no-repeat;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0 24px 24px;
+  height: 600px;
+  
 }
 
 .hero-heading {
