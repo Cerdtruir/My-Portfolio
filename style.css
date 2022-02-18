@@ -150,7 +150,6 @@ li {
 .portfolio-img {
   align-self: center;
   margin: 10px;
-  animation: 1s portfolio-img-slidein;
 }
 
 .portfolio-heading {
@@ -440,11 +439,8 @@ textarea {
   }
 
   .portfolio-flex:hover {
-    opacity: 1;
-  }
-
-  .portfolio-flex:hover {
     border: 2px solid #a7aeff;
+    opacity: 1;
   }
 
   .portfolio-flex > * {
