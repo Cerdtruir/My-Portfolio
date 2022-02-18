@@ -32,66 +32,70 @@
           <div class="hamburger"></div>
         </nav>
       </section>
-      <section class="hero">
-        <h1 class="hero-heading">
-          This is my Portfolio<br />Have a look around!
-        </h1>
-        <p class="hero-text">
-          I’m a software developer! I can help you build a product, feature or
-          website. Look through some of my work and experience! If you like what
-          you see and have a project you need coded, don’t hestiate to contact
-          me.
-        </p>
-        <p class="connect-text">LET’S CONNECT</p>
-        <ul>
-          <li>
-            <a href="twitter.com">
-              <img
-                class="social-image"
-                src="images/social-1.svg"
-                alt="social button"
-              />
-            </a>
-          </li>
-          <li>
-            <a href="twitter.com">
-              <img
-                class="social-image"
-                src="images/social-2.svg"
-                alt="social button"
-              />
-            </a>
-          </li>
-          <li>
-            <a href="twitter.com">
-              <img
-                class="social-image"
-                src="images/social-3.svg"
-                alt="social button"
-              />
-            </a>
-          </li>
-          <li>
-            <a href="twitter.com">
-              <img
-                class="social-image"
-                src="images/social-4.svg"
-                alt="social button"
-              />
-            </a>
-          </li>
-          <li>
-            <a href="twitter.com">
-              <img
-                class="social-image"
-                src="images/social-5.svg"
-                alt="social button"
-              />
-            </a>
-          </li>
-        </ul>
-      </section>
     </header>
+    <section class="hero-section">
+      <div class="hero-background">
+        <div class="hero">
+          <h1 class="hero-heading">
+            This is my Portfolio<br />Have a look around!
+          </h1>
+          <p class="hero-text">
+            I’m a software developer! I can help you build a product, feature or
+            website. Look through some of my work and experience! If you like
+            what you see and have a project you need coded, don’t hestiate to
+            contact me.
+          </p>
+          <p class="connect-text">LET’S CONNECT</p>
+          <ul>
+            <li>
+              <a href="twitter.com">
+                <img
+                  class="social-image"
+                  src="images/social-1.svg"
+                  alt="social button"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="twitter.com">
+                <img
+                  class="social-image"
+                  src="images/social-2.svg"
+                  alt="social button"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="twitter.com">
+                <img
+                  class="social-image"
+                  src="images/social-3.svg"
+                  alt="social button"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="twitter.com">
+                <img
+                  class="social-image"
+                  src="images/social-4.svg"
+                  alt="social button"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="twitter.com">
+                <img
+                  class="social-image"
+                  src="images/social-5.svg"
+                  alt="social button"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
     <div id="portfolio" class="portfolio-grid">
       <section class="portfolio-flex">
         <img
@@ -120,12 +124,7 @@
           <button type="button">See Project</button>
         </div>
       </section>
-      <section class="portfolio-flex">
-        <img
-          class="portfolio-img"
-          src="images/Portfolio-screenshot2.png"
-          alt="Portfolio Screenshot"
-        />
+      <section class="portfolio-flex portfolio-flex-reverse">
         <div class="portfolio-right">
           <h2 class="portfolio-heading">Multi-Post Stories</h2>
           <ul>
@@ -146,6 +145,11 @@
           </ul>
           <button type="button">See Project</button>
         </div>
+        <img
+          class="portfolio-img"
+          src="images/Portfolio-screenshot2.png"
+          alt="Portfolio Screenshot"
+        />
       </section>
       <section class="portfolio-flex">
         <img
@@ -174,12 +178,7 @@
           <button type="button">See Project</button>
         </div>
       </section>
-      <section class="portfolio-flex">
-        <img
-          class="portfolio-img"
-          src="images/Portfolio-screenshot4.png"
-          alt="Portfolio Screenshot"
-        />
+      <section class="portfolio-flex portfolio-flex-reverse">
         <div class="portfolio-right">
           <h2 class="portfolio-heading">Say Much Self</h2>
           <ul>
@@ -200,6 +199,11 @@
           </ul>
           <button type="button">See Project</button>
         </div>
+        <img
+          class="portfolio-img"
+          src="images/Portfolio-screenshot4.png"
+          alt="Portfolio Screenshot"
+        />
       </section>
     </div>
     <section id="about" class="about">
@@ -309,7 +313,11 @@
           that you need built or a project that needs coding. I’d love to help
           with it
         </p>
-        <form action="https://formspree.io/f/xvolkbkv" method="post">
+        <form
+          id="contact-form"
+          action="https://formspree.io/f/xvolkbkv"
+          method="post"
+        >
           <input
             type="text"
             name="name"
@@ -329,12 +337,14 @@
             required
             maxlength="500"
           ></textarea>
-          <input
-            id="submit-button"
+          <button
+            class="submit-button"
             type="submit"
-            name="submit"
+            form="contact-form"
             value="Get In Touch"
-          />
+          >
+            Get In Touch
+          </button>
         </form>
       </div>
     </footer>
