@@ -199,11 +199,13 @@ button {
   height: 50px;
   border-radius: 16px;
   border-width: 1px;
+  transition: background-color 0.5s, transform 0.5s;
 }
 
 button:hover {
   background-color: #6070ff;
   color: #fff;
+  transform: scale(1.1);
 }
 
 button:active {
@@ -408,6 +410,19 @@ textarea {
 
   .hero-heading {
     font-size: 48px;
+    animation: 1s heading-slidein;
+  }
+
+  @keyframes heading-slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
   }
 
   .hero-text {
@@ -419,10 +434,13 @@ textarea {
     margin: 27px 142px;
     align-items: center;
     padding: 0;
+    opacity: 0.6;
+    transition: 0.1s;
   }
 
   .portfolio-flex:hover {
     border: 2px solid #a7aeff;
+    opacity: 1;
   }
 
   .portfolio-flex > * {
@@ -433,6 +451,35 @@ textarea {
   .portfolio-right {
     height: 90%;
     justify-content: flex-start;
+    animation: 1s portfolio-right-slidein;
+  }
+
+  @keyframes portfolio-right-slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+  .portfolio-img {
+    animation: 1s portfolio-img-slidein;
+  }
+
+  @keyframes portfolio-img-slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+
+    to {
+      margin-right: 0%;
+      width: 100%;
+    }
   }
 
   .about {
