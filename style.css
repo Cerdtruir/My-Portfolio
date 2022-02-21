@@ -43,6 +43,7 @@ nav {
   border: none;
   color: #fff;
   font-size: 32px;
+  width: 10%;
 }
 
 .header-menu-items-mobile {
@@ -52,13 +53,17 @@ nav {
   position: fixed;
   width: 100%;
   height: 100%;
-  gap: 5%;
   align-items: flex-start;
   backdrop-filter: blur(5px);
 }
 
 .header-menu-li-mobile-first {
-  margin-top: 20%;
+  margin-top: 0;
+  margin-bottom: 10%;
+}
+
+.header-menu-li-mobile-second {
+  margin-bottom: 10%;
 }
 
 .header-menu-li-mobile {
