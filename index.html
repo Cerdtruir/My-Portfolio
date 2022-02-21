@@ -218,47 +218,47 @@
         <p class="connect-text">LET’S CONNECT</p>
         <ul>
           <li>
-            <a href="twitter.com">
+            <a href="https://angel.co/" target="_blank" rel="noopener noreferrer">
               <img
                 class="social-image"
                 src="images/social-1.svg"
-                alt="social button"
+                alt="AngeList Social Button"
               />
             </a>
           </li>
           <li>
-            <a href="twitter.com">
+            <a href="https://medium.com/" target="_blank" rel="noopener noreferrer">
               <img
                 class="social-image"
                 src="images/social-2.svg"
-                alt="social button"
+                alt="Medium Social Button"
               />
             </a>
           </li>
           <li>
-            <a href="twitter.com">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
               <img
                 class="social-image"
                 src="images/social-3.svg"
-                alt="social button"
+                alt="Instagram Social Button"
               />
             </a>
           </li>
           <li>
-            <a href="twitter.com">
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
               <img
                 class="social-image"
                 src="images/social-4.svg"
-                alt="social button"
+                alt="Github Social Button"
               />
             </a>
           </li>
           <li>
-            <a href="twitter.com">
+            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
               <img
                 class="social-image"
                 src="images/social-5.svg"
-                alt="social button"
+                alt="Twitter Social Button"
               />
             </a>
           </li>
@@ -313,25 +313,27 @@
           that you need built or a project that needs coding. I’d love to help
           with it
         </p>
-        <form
-          id="contact-form"
-          action="https://formspree.io/f/xvolkbkv"
-          method="post"
-        >
+        <form id="contact-form" action="https://formspree.io/f/xvolkbkv" method="post">
+          <label for="form-name">Your Name*</label>
           <input
+            id="form-name"
             type="text"
             name="name"
             placeholder="Your Name"
             maxlength="30"
             required
           />
+          <label for="form-email">Your Email*</label>
           <input
+            id="form-email"
             type="email"
             name="email"
             placeholder="Email Address"
             required
           />
+          <label for="form-message">Your Message*</label>
           <textarea
+            id="form-message"
             name="message"
             placeholder="Write your message here"
             required
