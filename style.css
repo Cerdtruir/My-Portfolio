@@ -434,6 +434,7 @@ textarea {
     width: 100%;
     top: 0;
     overflow: hidden;
+    z-index: 1;
   }
 
   .top-bar {
