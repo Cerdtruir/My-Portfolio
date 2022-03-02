@@ -506,11 +506,14 @@ textarea {
 
 @media screen and (min-width: 1024px) {
   header {
-    position: fixed;
     width: 100%;
     top: 0;
     overflow: hidden;
     z-index: 1;
+  }
+
+  .header-fixed {
+    position: fixed;
   }
 
   .top-bar {

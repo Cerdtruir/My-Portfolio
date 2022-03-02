@@ -106,6 +106,8 @@ portfolioArray.forEach((object) => {
   portfolioLanguages.innerHTML = portfolioObjects[object].languages;
   portfolioButton.textContent = portfolioObjects[object].seeProjectButton;
   portfolioButton.addEventListener('click', () => {
+    document.querySelector('.header').classList.remove('header-fixed');
+
     const popupDiv = document.createElement('div');
     const divContainer = document.createElement('div');
     const topBar = document.createElement('div');
@@ -150,6 +152,7 @@ portfolioArray.forEach((object) => {
     close.addEventListener('click', () => {
       const popupDiv = document.querySelector('.popupdiv');
       document.body.removeChild(popupDiv);
+      document.querySelector('.header').classList.add('header-fixed');
     });
 
     popupDiv.append(divContainer);
