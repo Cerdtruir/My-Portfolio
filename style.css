@@ -27,6 +27,55 @@ nav {
   margin: 0 10px 0 0;
 }
 
+#mobile-nav {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.menu-close-li {
+  align-self: flex-end;
+  margin-top: 5%;
+}
+
+.menu-close-button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 32px;
+  width: 100%;
+}
+
+.header-menu-items-mobile {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(96 112 255 / 90%);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  align-items: flex-start;
+  backdrop-filter: blur(5px);
+}
+
+.header-menu-li-mobile-first {
+  margin-top: 0;
+  margin-bottom: 10%;
+}
+
+.header-menu-li-mobile-second {
+  margin-bottom: 10%;
+}
+
+.header-menu-li-mobile {
+  font-size: 32px;
+  margin-left: 10%;
+}
+
+.menu-link-mobile {
+  color: #fff;
+  font-weight: 600;
+}
+
 .header-menu-items {
   margin-left: auto;
   display: none;
@@ -40,10 +89,7 @@ a {
 }
 
 .hamburger {
-  width: 35px;
-  height: 4px;
-  background-color: #6070ff;
-  margin: 6px 0;
+  font-size: 32px;
 }
 
 .hero-section {
@@ -388,6 +434,7 @@ textarea {
     width: 100%;
     top: 0;
     overflow: hidden;
+    z-index: 1;
   }
 
   .top-bar {

@@ -6,6 +6,7 @@ A website to display my portfolio of projects and websites. This site was made w
 
 - HTML
 - CSS
+- JavaScript
 
 ## Live Demo
 

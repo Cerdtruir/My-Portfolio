@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    
     <meta charset="UTF-8" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q0LLG4HZ94"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-Q0LLG4HZ94"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){window.dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        window.dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'G-Q0LLG4HZ94');
+      gtag("config", "G-Q0LLG4HZ94");
     </script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,6 +23,30 @@
   </head>
   <body>
     <header>
+      <div id="mobile-nav">
+        <ul class="header-menu-items-mobile">
+          <li class="menu-close-li">
+            <button type="button" class="menu-close-button close hide-menu">
+              &#10799;
+            </button>
+          </li>
+          <li
+            class="header-menu-li-mobile header-menu-li-mobile-first hide-menu"
+          >
+            <a class="menu-link-mobile" href="#portfolio">Portfolio</a>
+          </li>
+          <li
+            class="header-menu-li-mobile header-menu-li-mobile-second hide-menu"
+          >
+            <a class="menu-link-mobile" href="#about">About</a>
+          </li>
+          <li
+            class="header-menu-li-mobile header-menu-li-mobile-third hide-menu"
+          >
+            <a class="menu-link-mobile" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
       <section class="top-bar">
         <h2 class="logo">My Portfolio</h2>
         <ul class="header-menu-items">
@@ -27,9 +55,7 @@
           <li class="header-menu-link"><a href="#contact">Contact</a></li>
         </ul>
         <nav class="hamburger-nav">
-          <div class="hamburger"></div>
-          <div class="hamburger"></div>
-          <div class="hamburger"></div>
+          <p id="hamburger" class="hamburger">&#9776;</p>
         </nav>
       </section>
     </header>
@@ -218,7 +244,11 @@
         <p class="connect-text">LET’S CONNECT</p>
         <ul>
           <li>
-            <a href="https://angel.co/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://angel.co/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
                 class="social-image"
                 src="images/social-1.svg"
@@ -227,7 +257,11 @@
             </a>
           </li>
           <li>
-            <a href="https://medium.com/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://medium.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
                 class="social-image"
                 src="images/social-2.svg"
@@ -236,7 +270,11 @@
             </a>
           </li>
           <li>
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
                 class="social-image"
                 src="images/social-3.svg"
@@ -245,7 +283,11 @@
             </a>
           </li>
           <li>
-            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://github.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
                 class="social-image"
                 src="images/social-4.svg"
@@ -254,7 +296,11 @@
             </a>
           </li>
           <li>
-            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://twitter.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
                 class="social-image"
                 src="images/social-5.svg"
@@ -350,5 +396,6 @@
         </form>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
