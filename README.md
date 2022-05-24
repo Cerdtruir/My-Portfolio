@@ -2,6 +2,10 @@
 
 A website to display my portfolio of projects and websites. This site was made with a figma template.
 
+## Screenshot
+
+![Screenshot](Screenshot-Portfolio.png)
+
 ## Built With
 
 - HTML
