@@ -210,13 +210,12 @@ if (localStorage.getItem('formData')) {
   formName.value = parsedObject.name;
   formEmail.value = parsedObject.email;
   formMessage.value = parsedObject.message;
-  addData(formName);
-  addData(formEmail);
-  addData(formMessage);
 }
 
 formArray.forEach((formInput) => {
-  formInput.addEventListener('input', function () {
-    addData(this);
+  formInput.addEventListener('input', () => {
+    addData(formName);
+    addData(formEmail);
+    addData(formMessage);
   });
 });
