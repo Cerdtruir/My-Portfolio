@@ -5,25 +5,14 @@ document.getElementById('hamburger').onclick = function () {
   mobileMenu.style.display = 'block';
 };
 
-document.querySelector('.close').onclick = function () {
-  mobileMenu.style.display = 'none';
-};
+document.querySelectorAll('.hide-menu').forEach((element) => {
+  element.onclick = function () {
+    mobileMenu.style.display = 'none';
+  };
+});
 
-document.querySelector('.header-menu-li-mobile-first').onclick = function () {
-  mobileMenu.style.display = 'none';
-};
-
-document.querySelector('.header-menu-li-mobile-second').onclick = function () {
-  mobileMenu.style.display = 'none';
-};
-
-document.querySelector('.header-menu-li-mobile-third').onclick = function () {
-  mobileMenu.style.display = 'none';
-};
-
-// Portfolio Objects Object
-const portfolioObjects = {
-  portfolioObject1: {
+const portfolioArray = [
+  {
     heading: 'Tonic',
     subheading:
       '<li class="portfolio-list-first">Canopy</li> <li class="portfolio-list-dot"></li> <li class="portfolio-list-secondary">Back End Dev</li> <li class="portfolio-list-dot"></li> <li class="portfolio-list-secondary">2022</li>',
@@ -38,7 +27,7 @@ const portfolioObjects = {
     source: 'github.com',
     liveVersion: 'github.com',
   },
-  portfolioObject2: {
+  {
     heading: 'Multi-Post Stories',
     subheading:
       '<li class="portfolio-list-first">Canopy</li> <li class="portfolio-list-dot"></li> <li class="portfolio-list-secondary">Back End Dev</li> <li class="portfolio-list-dot"></li> <li class="portfolio-list-secondary">2022</li>',
@@ -53,7 +42,7 @@ const portfolioObjects = {
     source: 'github.com',
     liveVersion: 'github.com',
   },
-  portfolioObject3: {
+  {
     heading: 'Talk Type All',
     subheading:
       '<li class="portfolio-list-first">Canopy</li> <li class="portfolio-list-dot"></li> <li class="portfolio-list-secondary">Back End Dev</li> <li class="portfolio-list-dot"></li> <li class="portfolio-list-secondary">2022</li>',
@@ -68,7 +57,7 @@ const portfolioObjects = {
     source: 'github.com',
     liveVersion: 'github.com',
   },
-  portfolioObject4: {
+  {
     heading: 'Say Much Self',
     subheading:
       '<li class="portfolio-list-first">Canopy</li> <li class="portfolio-list-dot"></li> <li class="portfolio-list-secondary">Back End Dev</li> <li class="portfolio-list-dot"></li> <li class="portfolio-list-secondary">2022</li>',
@@ -83,11 +72,9 @@ const portfolioObjects = {
     source: 'github.com',
     liveVersion: 'github.com',
   },
-};
+];
 
-// Portfolio Generator
-const portfolioArray = Object.keys(portfolioObjects);
-
+let i = 0;
 portfolioArray.forEach((object) => {
   const header = document.querySelector('.header');
   const portfolioFlex = document.createElement('section');
@@ -100,6 +87,11 @@ portfolioArray.forEach((object) => {
   const portfolioButton = document.createElement('button');
 
   portfolioFlex.classList.add('portfolio-flex');
+  if (i % 2 === 0) {
+    portfolioFlex.classList.add('portfolio-flex-row');
+  } else {
+    portfolioFlex.classList.add('portfolio-flex-row-reverse');
+  }
   portfolioImage.classList.add('portfolio-img');
   portfolioRight.classList.add('portfolio-right');
   portfolioHeading.classList.add('portfolio-heading');
@@ -107,14 +99,15 @@ portfolioArray.forEach((object) => {
   portfolioText.classList.add('portfolio-text');
   portfolioLanguages.classList.add('portfolio-languages');
 
-  portfolioHeading.textContent = portfolioObjects[object].heading;
-  portfolioList.innerHTML = portfolioObjects[object].subheading;
-  portfolioImage.src = portfolioObjects[object].image;
-  portfolioText.textContent = portfolioObjects[object].shortDescription;
-  portfolioLanguages.innerHTML = portfolioObjects[object].languages;
-  portfolioButton.textContent = portfolioObjects[object].seeProjectButton;
-  // Portfolio Modal Generator
+  portfolioHeading.textContent = object.heading;
+  portfolioList.innerHTML = object.subheading;
+  portfolioImage.src = object.image;
+  portfolioText.textContent = object.shortDescription;
+  portfolioLanguages.innerHTML = object.languages;
+  portfolioButton.textContent = object.seeProjectButton;
   portfolioButton.addEventListener('click', () => {
+    document.querySelector('.header').classList.remove('header-fixed');
+
     const popupDiv = document.createElement('div');
     const divContainer = document.createElement('div');
     const topBar = document.createElement('div');
@@ -145,20 +138,21 @@ portfolioArray.forEach((object) => {
     line.classList.add('line');
     liveVersion.classList.add('liveVersion');
 
-    h2.textContent = portfolioObjects[object].heading;
-    subheading.innerHTML = portfolioObjects[object].subheading;
-    image.src = portfolioObjects[object].image;
-    description.textContent = portfolioObjects[object].description;
-    languages.innerHTML = portfolioObjects[object].languages;
-    source.href = portfolioObjects[object].source;
+    h2.textContent = object.heading;
+    subheading.innerHTML = object.subheading;
+    image.src = object.image;
+    description.textContent = object.description;
+    languages.innerHTML = object.languages;
+    source.href = object.source;
     source.textContent = 'Source';
-    liveVersion.href = portfolioObjects[object].liveVersion;
+    liveVersion.href = object.liveVersion;
     liveVersion.textContent = 'Live Site';
     close.textContent = 'x';
     close.classList.add('close');
     close.addEventListener('click', () => {
       const popupDiv = document.querySelector('.popupdiv');
       document.body.removeChild(popupDiv);
+      document.querySelector('.header').classList.add('header-fixed');
     });
 
     popupDiv.append(divContainer);
@@ -179,6 +173,7 @@ portfolioArray.forEach((object) => {
     portfolioButton,
   );
   document.body.querySelector('#portfolio').append(portfolioFlex);
+  i += 1;
 });
 
 // Form Check If Valid Email

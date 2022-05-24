@@ -22,19 +22,27 @@
     <title>Nabeel's Portfolio</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header header-fixed">
       <div id="mobile-nav">
         <ul class="header-menu-items-mobile">
           <li class="menu-close-li">
-            <button type="button" class="menu-close-button close">x</button>
+            <button type="button" class="menu-close-button close hide-menu">
+              &#10799;
+            </button>
           </li>
-          <li class="header-menu-li-mobile header-menu-li-mobile-first">
+          <li
+            class="header-menu-li-mobile header-menu-li-mobile-first hide-menu"
+          >
             <a class="menu-link-mobile" href="#portfolio">Portfolio</a>
           </li>
-          <li class="header-menu-li-mobile header-menu-li-mobile-second">
+          <li
+            class="header-menu-li-mobile header-menu-li-mobile-second hide-menu"
+          >
             <a class="menu-link-mobile" href="#about">About</a>
           </li>
-          <li class="header-menu-li-mobile header-menu-li-mobile-third">
+          <li
+            class="header-menu-li-mobile header-menu-li-mobile-third hide-menu"
+          >
             <a class="menu-link-mobile" href="#contact">Contact</a>
           </li>
         </ul>
@@ -50,94 +58,79 @@
           <p id="hamburger" class="hamburger">&#9776;</p>
         </nav>
       </section>
-      <section class="hero">
-        <h1 class="hero-heading">
-          This is my Portfolio<br />Have a look around!
-        </h1>
-        <p class="hero-text">
-          I’m a software developer! I can help you build a product, feature or
-          website. Look through some of my work and experience! If you like what
-          you see and have a project you need coded, don’t hestiate to contact
-          me.
-        </p>
-        <p class="connect-text">LET’S CONNECT</p>
-        <ul>
-          <li>
-            <a
-              href="https://angel.co/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                class="social-image"
-                src="images/social-1.svg"
-                alt="AngeList Social Button"
-              />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://medium.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                class="social-image"
-                src="images/social-2.svg"
-                alt="Medium Social Button"
-              />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.instagram.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                class="social-image"
-                src="images/social-3.svg"
-                alt="Instagram Social Button"
-              />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://github.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                class="social-image"
-                src="images/social-4.svg"
-                alt="Github Social Button"
-              />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://twitter.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                class="social-image"
-                src="images/social-5.svg"
-                alt="Twitter Social Button"
-              />
-            </a>
-          </li>
-        </ul>
-      </section>
     </header>
-    <div id="portfolio" class="portfolio-grid"></div>
+    <section class="hero-section">
+      <div class="hero-background">
+        <div class="hero">
+          <h1 class="hero-heading">
+            This is my Portfolio<br />Have a look around!
+          </h1>
+          <p class="hero-text">
+            I’m a software developer! I can help you build a product, feature or
+            website. Look through some of my work and experience! If you like
+            what you see and have a project you need coded, don’t hesitate to
+            contact me.
+          </p>
+          <p class="connect-text">LET’S CONNECT</p>
+          <ul>
+            <li>
+              <a href="twitter.com">
+                <img
+                  class="social-image"
+                  src="images/social-1.svg"
+                  alt="social button"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="twitter.com">
+                <img
+                  class="social-image"
+                  src="images/social-2.svg"
+                  alt="social button"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="twitter.com">
+                <img
+                  class="social-image"
+                  src="images/social-3.svg"
+                  alt="social button"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="twitter.com">
+                <img
+                  class="social-image"
+                  src="images/social-4.svg"
+                  alt="social button"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="twitter.com">
+                <img
+                  class="social-image"
+                  src="images/social-5.svg"
+                  alt="social button"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div id="portfolio" class="portfolio-grid">
+    </div>
     <section id="about" class="about">
       <div class="about-left">
         <h2 class="about-heading">About<br />Me</h2>
         <p class="about-text">
           I’m a software developer! I can help you build a product, feature or
           website. Look through some of my work and experience! If you like what
-          you see and have a project you need coded, don’t hestiate to contact
+          you see and have a project you need coded, don’t hesitate to contact
           me.
         </p>
         <p class="connect-text">LET’S CONNECT</p>
@@ -258,7 +251,7 @@
           that you need built or a project that needs coding. I’d love to help
           with it
         </p>
-        <form action="https://formspree.io/f/xvolkbkv" id="form" method="post">
+        <form id="contact-form" action="https://formspree.io/f/xvolkbkv" method="post">
           <label for="form-name">Your Name*</label>
           <input
             id="form-name"
@@ -287,10 +280,11 @@
           <span class="error-message footer-text"></span>
           <input
             id="submit-button"
+            class="submit-button"
             type="submit"
-            name="submit"
+            form="contact-form"
             value="Get In Touch"
-          />
+          >
         </form>
       </div>
     </footer>
