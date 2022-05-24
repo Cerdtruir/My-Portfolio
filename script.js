@@ -1,3 +1,4 @@
+// Mobile Menu
 const mobileMenu = document.getElementById('mobile-nav');
 
 document.getElementById('hamburger').onclick = function () {
@@ -105,7 +106,7 @@ portfolioArray.forEach((object) => {
   portfolioLanguages.innerHTML = object.languages;
   portfolioButton.textContent = object.seeProjectButton;
   portfolioButton.addEventListener('click', () => {
-    document.querySelector('.header').classList.remove('header-fixed');
+    header.classList.remove('header-fixed');
 
     const popupDiv = document.createElement('div');
     const divContainer = document.createElement('div');
@@ -151,7 +152,7 @@ portfolioArray.forEach((object) => {
     close.addEventListener('click', () => {
       const popupDiv = document.querySelector('.popupdiv');
       document.body.removeChild(popupDiv);
-      document.querySelector('.header').classList.add('header-fixed');
+      header.classList.add('header-fixed');
     });
 
     popupDiv.append(divContainer);
@@ -173,4 +174,48 @@ portfolioArray.forEach((object) => {
   );
   document.body.querySelector('#portfolio').append(portfolioFlex);
   i += 1;
+});
+
+// Form Check If Valid Email
+const form = document.getElementById('contact-form');
+const formName = document.getElementById('form-name');
+const formEmail = document.getElementById('form-email');
+const formMessage = document.getElementById('form-message');
+const errorMessage = document.querySelector('.error-message');
+
+const checkEmail = /^[a-z0-9@.]+$/;
+
+form.addEventListener('submit', (event) => {
+  if (checkEmail.test(formEmail.value) === false) {
+    event.preventDefault();
+    errorMessage.textContent = 'Please only use lower case letters in your email';
+  }
+});
+
+// Form Local Storage
+const formObj = {};
+let stringifiedObject = '';
+let parsedObject = {};
+const formArray = [formName, formEmail, formMessage];
+
+function addData(data) {
+  formObj[data.name] = data.value;
+  stringifiedObject = JSON.stringify(formObj);
+  localStorage.setItem('formData', stringifiedObject);
+}
+
+// Check For And Add Saved Data
+if (localStorage.getItem('formData')) {
+  parsedObject = JSON.parse(localStorage.getItem('formData'));
+  formName.value = parsedObject.name;
+  formEmail.value = parsedObject.email;
+  formMessage.value = parsedObject.message;
+}
+
+formArray.forEach((formInput) => {
+  formInput.addEventListener('input', () => {
+    addData(formName);
+    addData(formEmail);
+    addData(formMessage);
+  });
 });
